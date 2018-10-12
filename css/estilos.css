@@ -19,28 +19,41 @@ header{
 
 	/*FLEX*/
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 header nav{
 	width: 50%;
+
+	margin-right: 5px;
+	margin-left: auto;
 	/*FLEX*/
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: flex-end;
 }
 
 header nav a{
+	background: green;
 	color:white;
-	text-align: right;
 	text-decoration: none;
 	padding: 10px;
 	font-size: 20px;
-
 	/*Flex*/
-	
+	/*flex-grow: 1; Para que se disperse todo el menu en el ancho del contenedor*/
+}
+@media (min-width:421px) and (max-width:720px) {
+	header nav {
+		width: 100%;
+		justify-content: flex-start;
+	}
+}
+@media (max-width:420px) {
+	header nav {
+		width: 100%;
+		justify-content: flex-start;
+	}
 }
