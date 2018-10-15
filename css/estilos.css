@@ -1,6 +1,6 @@
 
 .contenedor {
-	text-shadow:1px 2px 3px #05010a;
+	text-shadow:1px 2px 3px #02010a;
   font-family: Dancing, Script;
 	margin: auto;
 	width: 100%;
@@ -26,7 +26,6 @@ header{
 
 header nav{
 	width: 50%;
-
 	margin-right: 5px;
 	margin-left: auto;
 	/*FLEX*/
@@ -37,23 +36,88 @@ header nav{
 }
 
 header nav a{
-	background: green;
 	color:white;
-	text-decoration: none;
 	padding: 10px;
 	font-size: 20px;
 	/*Flex*/
 	/*flex-grow: 1; Para que se disperse todo el menu en el ancho del contenedor*/
 }
 @media (min-width:421px) and (max-width:720px) {
+	header .titulo{
+		width: 100%;
+		text-align: center;
+	}
+	header nav {
+		width: 100%;
+		justify-content: center;
+		text-align: center;
+	}
+
+}
+@media (max-width:420px) {
+	header{
+		width: 100%;
+		text-align: center;
+	}
 	header nav {
 		width: 100%;
 		justify-content: flex-start;
 	}
 }
-@media (max-width:420px) {
-	header nav {
-		width: 100%;
-		justify-content: flex-start;
-	}
+section{
+	width: 100%;
+	padding: 5px;
+	margin: 3px;
+}
+section .central{
+	width: 100%;
+	background: #82c3a6;
+		/*FLEX*/
+	display: flex;
+	flex-flow: nowrap;
+	flex-direction: row;
+	justify-content:center;
+}
+
+section .central img{
+	width: 50%;
+	background: #82c3a6;
+	margin: 3px;
+}
+
+section .secundario{
+	width: 100%;
+	padding: 15px;
+	background: #d5c75f;
+
+	/*FLEX*/
+	display: flex;
+	flex-flow: nowrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+section .secundario img{
+	width: 15%;
+	margin: 5px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+section .secundario #op1:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+
+section .secundario #op2:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px 2px #82c3a6;
+	/*-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);*/
+}
+
+section .secundario a{
+	width: 15%;
+	text-align: center;
+	color: black;
 }
