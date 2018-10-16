@@ -34,19 +34,19 @@ header{
 	justify-content: space-between;
 	animation-duration: 3s;
 	animation-name: slidein;
-	}
+}
 
-	@-webkit-keyframes slidein {
+@-webkit-keyframes slidein {
 	0%{
-		margin-top: 150%;
-	}
+	  margin-top: 150%;
+  }
 	60%{
-		margin-top: -5%;
-	}
+    margin-top: -5%;
+  }
 	100%{
 		margin-top: 0%;
 	}
-	}
+}
 
 header nav{
 	width: 50%;
@@ -65,66 +65,47 @@ header nav a{
 	font-size: 20px;
 }
 
-
 section{
 	width: 100%;
-}
-section .central{
-	width: 100%;
-	background: #82c3a6;
-
-		/*FLEX*/
-	display: flex;
-	flex-flow: nowrap;
-	flex-direction: row;
-	justify-content:center;
-}
-
-section .central img{
-	width: 50%;
-	background: #82c3a6;
-	margin: 3px;
-}
-
-section .secundario{
-	width: 100%;
 	background: #d5c75f;
+}
 
-	/*FLEX*/
+.contenido img{
+	width: 200px;
+	margin: 5px;
+}
+
+#contenido {
 	display: flex;
-	flex-flow: nowrap;
+	flex-direction: column;
+
+}
+
+.contenedor {
+	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 
-section .secundario img{
-	width: 15%;
-	margin: 5px;
-	border-style: solid;
-	border-width: 1px;
+#imagen1 img{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
 }
 
-section .secundario #op1:hover{
-	transform: rotate(10deg);
-	box-shadow: 2px 2px 2px #82c3a6;
+.bn img{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
-section .secundario #op2:hover{
-	transform: translate(20px, -5px);
-	box-shadow: 2px 2px 2px #82c3a6;
-}
-
-section .secundario a{
-	width: 15%;
-	text-align: center;
-	color: black;
+#imagen3 img{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
 }
 
 footer {
 	width: 100%;
 	background: #C6d5c5;
 	border-radius: 0 0 10px 10px;
-
 	/*FLEX*/
 	display: flex;
 	flex-flow: nowrap;
@@ -139,7 +120,7 @@ footer {
 
 @media (min-width:900px){
 	header{
-		justify-content: center;
+		justify-content: space-around;
 	}
 }
 
